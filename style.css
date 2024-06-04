@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+.container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hearth {
+  width: 40px;
+  height: 40px;
+  background-image: url("./animation-images/hearth.avif");
+  animation-name: turn;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  /* animation-delay: 0; */
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
+  background-color: red;
+  transform-origin: 70px 20px;
+}
+.sun {
+  background-image: url(./animation-images/sun.jpeg);
+}
+.moon {
+  width: 20px;
+  height: 20px;
+  background-image: url(./animation-images/moon.jpeg);
+}
+@keyframes turn {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
