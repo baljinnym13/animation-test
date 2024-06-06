@@ -11,6 +11,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotateX(60deg);
 }
 
 .box {
@@ -34,7 +35,7 @@ h1 {
   animation-fill-mode: forwards;
   /* animation-delay: 0; */
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease;
   animation-direction: normal;
   background-color: red;
   transform-origin: 140px 40px;
@@ -63,15 +64,11 @@ h1 {
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease;
   animation-direction: normal;
   transform-origin: 20px -20px;
 }
-.footerbutton > h2 {
-  font-size: 12.6px;
-  font-weight: 700;
-  text-align: left;
-}
+
 .planet {
   animation-name: turn;
   animation-duration: 8s;
@@ -82,6 +79,8 @@ h1 {
   animation-direction: normal;
   /* background-color: red; */
   transform-origin: 140px 40px;
+  transform: rotate(45deg);
+  transform: skewy(90deg);
 }
 @keyframes turn {
   from {
